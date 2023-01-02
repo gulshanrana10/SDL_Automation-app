@@ -1,0 +1,371 @@
+[94m[INFO]: Creating flavors...[00m
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_storage_rtdb[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_storage_rtdb[00m
+[96m[CMD]: openstack flavor create gurana_sdl_storage_rtdb --vcpus 8 --disk 50 --ram 32768[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 50                                   |
+| id                         | 59ac33ed-a47c-4780-bb46-1e689c440eaa |
+| name                       | gurana_sdl_storage_rtdb              |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 32768                                |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 8                                    |
++----------------------------+--------------------------------------+
+
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_ops[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_ops[00m
+[96m[CMD]: openstack flavor create gurana_sdl_ops --vcpus 4 --disk 25 --ram 8192[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 25                                   |
+| id                         | cda99413-08a1-4e04-8f17-bc52b2d2d7b8 |
+| name                       | gurana_sdl_ops                       |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 8192                                 |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 4                                    |
++----------------------------+--------------------------------------+
+
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_diag[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_diag[00m
+[96m[CMD]: openstack flavor create gurana_sdl_diag --vcpus 4 --disk 25 --ram 16384[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 25                                   |
+| id                         | 283bbb03-7eee-4460-a8ba-5cf209cbb8c5 |
+| name                       | gurana_sdl_diag                      |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 16384                                |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 4                                    |
++----------------------------+--------------------------------------+
+
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_tele[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_tele[00m
+[96m[CMD]: openstack flavor create gurana_sdl_tele --vcpus 4 --disk 25 --ram 16384[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 25                                   |
+| id                         | af4ddd93-bfac-45f1-a6f8-dff81dc32003 |
+| name                       | gurana_sdl_tele                      |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 16384                                |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 4                                    |
++----------------------------+--------------------------------------+
+
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_access_rtdb[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_access_rtdb[00m
+[96m[CMD]: openstack flavor create gurana_sdl_access_rtdb --vcpus 8 --disk 50 --ram 32768[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 50                                   |
+| id                         | 26c40e02-4bac-413a-b736-9c23924298b3 |
+| name                       | gurana_sdl_access_rtdb               |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 32768                                |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 8                                    |
++----------------------------+--------------------------------------+
+
+[95m[INFO]: Checking for existing flavors...[00m
+[96m[CMD]: openstack flavor list | grep -w gurana_sdl_ntf[00m
+
+[92m[INFO]: Creating flavor gurana_sdl_ntf[00m
+[96m[CMD]: openstack flavor create gurana_sdl_ntf --vcpus 4 --disk 50 --ram 16384[00m
++----------------------------+--------------------------------------+
+| Field                      | Value                                |
++----------------------------+--------------------------------------+
+| OS-FLV-DISABLED:disabled   | False                                |
+| OS-FLV-EXT-DATA:ephemeral  | 0                                    |
+| disk                       | 50                                   |
+| id                         | e2e2ba80-9d49-4a3e-a8f3-afcc4ade2462 |
+| name                       | gurana_sdl_ntf                       |
+| os-flavor-access:is_public | True                                 |
+| properties                 |                                      |
+| ram                        | 16384                                |
+| rxtx_factor                | 1.0                                  |
+| swap                       |                                      |
+| vcpus                      | 4                                    |
++----------------------------+--------------------------------------+
+
+[92m[INFO]: Flavor Creation completed!!![00m
+[94m[INFO]: Unzipping SDL Media...[00m
+[95m[INFO]: Unzipping SDL media file to directory '/home/gurana/sdlmedia'[00m
+[96m[CMD]: cpio -idm < /root/cbis585_folder/SDL_22/SDL-22.0.0.0-20211208-118.cpio[00m
+13553921 blocks
+
+[96m[CMD]: ls -l [00m
+total 6765628
+-rw-r--r--.  1 root root        132 Dec  8  2021 nokia-sdl-diagnostics-22.0.0.0-118.md5
+-rw-r--r--.  1 root root 1418067968 Dec  8  2021 nokia-sdl-diagnostics-22.0.0.0-118.qcow2
+-rw-r--r--.  1 root root        133 Dec  8  2021 nokia-sdl-notification-22.0.0.0-118.md5
+-rw-r--r--.  1 root root 1005715456 Dec  8  2021 nokia-sdl-notification-22.0.0.0-118.qcow2
+-rw-r--r--.  1 root root        131 Dec  8  2021 nokia-sdl-operations-22.0.0.0-118.md5
+-rw-r--r--.  1 root root 1111556096 Dec  8  2021 nokia-sdl-operations-22.0.0.0-118.qcow2
+-rw-r--r--.  1 root root        137 Dec  8  2021 nokia-sdl-realtimedatabase-22.0.0.0-118.md5
+-rw-r--r--.  1 root root 1335655936 Dec  8  2021 nokia-sdl-realtimedatabase-22.0.0.0-118.qcow2
+-rw-r--r--.  1 root root        131 Dec  8  2021 nokia-sdl-syncserver-22.0.0.0-118.md5
+-rw-r--r--.  1 root root  925499392 Dec  8  2021 nokia-sdl-syncserver-22.0.0.0-118.qcow2
+-rw-r--r--.  1 root root        130 Dec  8  2021 nokia-sdl-telemetry-22.0.0.0-118.md5
+-rw-r--r--.  1 root root 1131479040 Dec  8  2021 nokia-sdl-telemetry-22.0.0.0-118.qcow2
+drwxr-xr-x. 13 root root       4096 Dec  8  2021 orchestration
+
+[92m[INFO]: Media Unzipping completed!!![00m
+[94m[INFO]: Glancing images...[00m
+[93m[INFO]: Creation will take several minutes. Please wait.[00m
+[95m[INFO]: Checking for existing images...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-operations-22[00m
+
+[92m[INFO]: Glancing image nokia-sdl-operations-22[00m
+[96m[CMD]: glance image-create --name nokia-sdl-operations-22 --disk-format qcow2 --container-format bare --file nokia-sdl-operations-22.0.0.0-118.qcow2[00m
++------------------+----------------------------------------------------------------------------------+
+| Property         | Value                                                                            |
++------------------+----------------------------------------------------------------------------------+
+| checksum         | faf7b56536c732c69c4dec79333b5b58                                                 |
+| container_format | bare                                                                             |
+| created_at       | 2022-09-06T09:57:50Z                                                             |
+| direct_url       | rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/f926729b-7965-4856-ac74-72187c |
+|                  | 5f59a3/snap                                                                      |
+| disk_format      | qcow2                                                                            |
+| id               | f926729b-7965-4856-ac74-72187c5f59a3                                             |
+| locations        | [{"url": "rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/f926729b-7965-4856-a |
+|                  | c74-72187c5f59a3/snap", "metadata": {}}]                                         |
+| min_disk         | 0                                                                                |
+| min_ram          | 0                                                                                |
+| name             | nokia-sdl-operations-22                                                          |
+| os_hash_algo     | sha512                                                                           |
+| os_hash_value    | 0087ec654b8471cd58cb211d12d40f720fa2ac6e8f43692960329a5ab7bd383f036e03db388fc6ac |
+|                  | 71b98fa2ba5f9fabfaf920db7225a231ad943de206809e8a                                 |
+| os_hidden        | False                                                                            |
+| owner            | d31730ac1c304d179bec14cabd52dfe6                                                 |
+| protected        | False                                                                            |
+| size             | 1111556096                                                                       |
+| status           | active                                                                           |
+| tags             | []                                                                               |
+| updated_at       | 2022-09-06T09:58:12Z                                                             |
+| virtual_size     | Not available                                                                    |
+| visibility       | shared                                                                           |
++------------------+----------------------------------------------------------------------------------+
+
+[95m[INFO]: Checking for existing images...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-realtimedatabase-22[00m
+
+[92m[INFO]: Glancing image nokia-sdl-realtimedatabase-22[00m
+[96m[CMD]: glance image-create --name nokia-sdl-realtimedatabase-22 --disk-format qcow2 --container-format bare --file nokia-sdl-realtimedatabase-22.0.0.0-118.qcow2[00m
++------------------+----------------------------------------------------------------------------------+
+| Property         | Value                                                                            |
++------------------+----------------------------------------------------------------------------------+
+| checksum         | b2365b02bfb95d832a36bf78d2435e11                                                 |
+| container_format | bare                                                                             |
+| created_at       | 2022-09-06T09:58:16Z                                                             |
+| direct_url       | rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/16b3ecd2-de35-4a2d-b687-421818 |
+|                  | 3cd5fa/snap                                                                      |
+| disk_format      | qcow2                                                                            |
+| id               | 16b3ecd2-de35-4a2d-b687-4218183cd5fa                                             |
+| locations        | [{"url": "rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/16b3ecd2-de35-4a2d-b |
+|                  | 687-4218183cd5fa/snap", "metadata": {}}]                                         |
+| min_disk         | 0                                                                                |
+| min_ram          | 0                                                                                |
+| name             | nokia-sdl-realtimedatabase-22                                                    |
+| os_hash_algo     | sha512                                                                           |
+| os_hash_value    | aa8fe3765cd7675a61305ae59227ac5081a572c97af26568eb40601400b137a80996ba90a1e58c53 |
+|                  | 88f9fb2a926ab3eb8913cc1c86c9170a9d7a9c0113f5e121                                 |
+| os_hidden        | False                                                                            |
+| owner            | d31730ac1c304d179bec14cabd52dfe6                                                 |
+| protected        | False                                                                            |
+| size             | 1335655936                                                                       |
+| status           | active                                                                           |
+| tags             | []                                                                               |
+| updated_at       | 2022-09-06T09:58:40Z                                                             |
+| virtual_size     | Not available                                                                    |
+| visibility       | shared                                                                           |
++------------------+----------------------------------------------------------------------------------+
+
+[95m[INFO]: Checking for existing images...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-telemetry-22[00m
+
+[92m[INFO]: Glancing image nokia-sdl-telemetry-22[00m
+[96m[CMD]: glance image-create --name nokia-sdl-telemetry-22 --disk-format qcow2 --container-format bare --file nokia-sdl-telemetry-22.0.0.0-118.qcow2[00m
++------------------+----------------------------------------------------------------------------------+
+| Property         | Value                                                                            |
++------------------+----------------------------------------------------------------------------------+
+| checksum         | 5c886892ba92b230de744bd4f63d865e                                                 |
+| container_format | bare                                                                             |
+| created_at       | 2022-09-06T09:58:44Z                                                             |
+| direct_url       | rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/8826904c-d6f6-43ab-a03e-       |
+|                  | 66fc8e97eff7/snap                                                                |
+| disk_format      | qcow2                                                                            |
+| id               | 8826904c-d6f6-43ab-a03e-66fc8e97eff7                                             |
+| locations        | [{"url": "rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/8826904c-d6f6-43ab-  |
+|                  | a03e-66fc8e97eff7/snap", "metadata": {}}]                                        |
+| min_disk         | 0                                                                                |
+| min_ram          | 0                                                                                |
+| name             | nokia-sdl-telemetry-22                                                           |
+| os_hash_algo     | sha512                                                                           |
+| os_hash_value    | 839c69887bf69b550110d67da3a6b5ecd40195695d830daf2add5cf883d5dacc1e2452108f0167ff |
+|                  | b404ad8abe28d3a44b0caf27a9ab73dbde6fb0744007f86d                                 |
+| os_hidden        | False                                                                            |
+| owner            | d31730ac1c304d179bec14cabd52dfe6                                                 |
+| protected        | False                                                                            |
+| size             | 1131479040                                                                       |
+| status           | active                                                                           |
+| tags             | []                                                                               |
+| updated_at       | 2022-09-06T09:59:03Z                                                             |
+| virtual_size     | Not available                                                                    |
+| visibility       | shared                                                                           |
++------------------+----------------------------------------------------------------------------------+
+
+[95m[INFO]: Checking for existing images...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-notification-22[00m
+
+[92m[INFO]: Glancing image nokia-sdl-notification-22[00m
+[96m[CMD]: glance image-create --name nokia-sdl-notification-22 --disk-format qcow2 --container-format bare --file nokia-sdl-notification-22.0.0.0-118.qcow2[00m
++------------------+----------------------------------------------------------------------------------+
+| Property         | Value                                                                            |
++------------------+----------------------------------------------------------------------------------+
+| checksum         | e29514e7768ea62b48755cbf829a3782                                                 |
+| container_format | bare                                                                             |
+| created_at       | 2022-09-06T09:59:07Z                                                             |
+| direct_url       | rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/0edf14d9-aac3-4ab7-81d5-d67081 |
+|                  | 07b8e0/snap                                                                      |
+| disk_format      | qcow2                                                                            |
+| id               | 0edf14d9-aac3-4ab7-81d5-d6708107b8e0                                             |
+| locations        | [{"url": "rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/0edf14d9-aac3-4ab7-8 |
+|                  | 1d5-d6708107b8e0/snap", "metadata": {}}]                                         |
+| min_disk         | 0                                                                                |
+| min_ram          | 0                                                                                |
+| name             | nokia-sdl-notification-22                                                        |
+| os_hash_algo     | sha512                                                                           |
+| os_hash_value    | 9f96aa2215a6dda601391089b766caf94f0586b1777c7cabe1d7555ae2e8ff594e1f4788421f95f0 |
+|                  | ed5010df8f25a3de9470f9f86b2a22275d1ed13644ed8a64                                 |
+| os_hidden        | False                                                                            |
+| owner            | d31730ac1c304d179bec14cabd52dfe6                                                 |
+| protected        | False                                                                            |
+| size             | 1005715456                                                                       |
+| status           | active                                                                           |
+| tags             | []                                                                               |
+| updated_at       | 2022-09-06T09:59:26Z                                                             |
+| virtual_size     | Not available                                                                    |
+| visibility       | shared                                                                           |
++------------------+----------------------------------------------------------------------------------+
+
+[95m[INFO]: Checking for existing images...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-diagnostics-22[00m
+
+[92m[INFO]: Glancing image nokia-sdl-diagnostics-22[00m
+[96m[CMD]: glance image-create --name nokia-sdl-diagnostics-22 --disk-format qcow2 --container-format bare --file nokia-sdl-diagnostics-22.0.0.0-118.qcow2[00m
++------------------+----------------------------------------------------------------------------------+
+| Property         | Value                                                                            |
++------------------+----------------------------------------------------------------------------------+
+| checksum         | 4d3f21512a81779b69f85871738c5145                                                 |
+| container_format | bare                                                                             |
+| created_at       | 2022-09-06T09:59:30Z                                                             |
+| direct_url       | rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/7b6db415-7cdb-4559-a15e-       |
+|                  | 6b2ceb6f1760/snap                                                                |
+| disk_format      | qcow2                                                                            |
+| id               | 7b6db415-7cdb-4559-a15e-6b2ceb6f1760                                             |
+| locations        | [{"url": "rbd://c96f11dc-e064-4b66-bb41-3d047eef5cea/images/7b6db415-7cdb-4559   |
+|                  | -a15e-6b2ceb6f1760/snap", "metadata": {}}]                                       |
+| min_disk         | 0                                                                                |
+| min_ram          | 0                                                                                |
+| name             | nokia-sdl-diagnostics-22                                                         |
+| os_hash_algo     | sha512                                                                           |
+| os_hash_value    | 2c62b363fb3a0cb0bb659084525816a2cd5f153f36e02eb4fdd5865bd23d47528abf92d7928f67b5 |
+|                  | 33c860bc0ac724458d773c313f9a71aed9783876ee124f61                                 |
+| os_hidden        | False                                                                            |
+| owner            | d31730ac1c304d179bec14cabd52dfe6                                                 |
+| protected        | False                                                                            |
+| size             | 1418067968                                                                       |
+| status           | active                                                                           |
+| tags             | []                                                                               |
+| updated_at       | 2022-09-06T10:00:00Z                                                             |
+| virtual_size     | Not available                                                                    |
+| visibility       | shared                                                                           |
++------------------+----------------------------------------------------------------------------------+
+
+[94m[INFO]: Checking completion of image creation...[00m
+[96m[CMD]: openstack image list | grep -i nokia-sdl-operations-22[00m
+| f926729b-7965-4856-ac74-72187c5f59a3 | nokia-sdl-operations-22              | active |
+
+[96m[CMD]: openstack image list | grep -i nokia-sdl-realtimedatabase-22[00m
+| 16b3ecd2-de35-4a2d-b687-4218183cd5fa | nokia-sdl-realtimedatabase-22        | active |
+
+[96m[CMD]: openstack image list | grep -i nokia-sdl-telemetry-22[00m
+| 8826904c-d6f6-43ab-a03e-66fc8e97eff7 | nokia-sdl-telemetry-22               | active |
+
+[96m[CMD]: openstack image list | grep -i nokia-sdl-notification-22[00m
+| 0edf14d9-aac3-4ab7-81d5-d6708107b8e0 | nokia-sdl-notification-22            | active |
+
+[96m[CMD]: openstack image list | grep -i nokia-sdl-diagnostics-22[00m
+| 7b6db415-7cdb-4559-a15e-6b2ceb6f1760 | nokia-sdl-diagnostics-22             | active |
+
+[92m[INFO]: Glance creation successfull !!![00m
+[94m[INFO]: Initiating Password encryption...[00m
+[93m[INFO]: This will take few minutes. Please wait...[00m
+[96m
+[CMD]: python pass_encrypt.py /home/gurana/TPD.yaml --entropy[00m
+[92mEncryption completed[00m
+[94m[INFO]: Initiating TPD validation...[00m
+[96m[CMD]: python prepare_VNF_inputs.py --TPD_path /home/gurana/TPD.yaml --vnf_type sdl --validate_TPD[00m
+2022-09-06T11:00:19.460+00:00, info, , Started logging to /home/gurana/sdlmedia/orchestration/preparation_tools/log/prepare_VNF_inputs_20220906-110019
+2022-09-06T11:00:19.460+00:00, info, , Execution of prepare_VNF_inputs.py started
+2022-09-06T11:00:19.583+00:00, info, , TPD validation successful
+2022-09-06T11:00:19.584+00:00, info, , Execution of prepare_VNF_inputs.py completed
+
+[92m[INFO]: TPD Validation successfull !!![00m
+[94m[INFO]: Verifying if stack exists already...[00m
+[96m[CMD]: openstack stack list | grep -w sdl_cinder_SDL_test[00m
+
+[94m[INFO]: Creating stack...[00m
+[93m[INFO]: Completion will take several minutes. Please wait.[00m
+[93m[INFO]: You can check the logs here -> /home/gurana/sdlmedia/orchestration/preparation_tools/log[00m
+[96m[CMD]: python prepare_VNF_inputs.py --TPD_path /home/gurana/TPD.yaml --openstack_env_file /home/gurana/CBIS_585-openrc.sh --vnf_type sdl --resource_suffix SDL_test[00m
+2022-09-06T11:00:22.452+00:00, info, , Started logging to /home/gurana/sdlmedia/orchestration/preparation_tools/log/prepare_VNF_inputs_20220906-110022
+2022-09-06T11:00:22.453+00:00, info, , Execution of prepare_VNF_inputs.py started
+2022-09-06T11:00:22.604+00:00, info, , WARNING: signed_certs.json is not generated and it is not present in generated directory. Continuing without adding the certificates.
+2022-09-06T11:00:22.605+00:00, info, , WARNING: "ca-authority" parameter is not specified in TPD. Continuing without adding the certificates.
+2022-09-06T11:00:22.605+00:00, info, , WARNING: The certificate certs.pfx is not generated and are not present in the generated directory. Continuing without adding the certificates.
+2022-09-06T11:00:22.605+00:00, info, , WARNING: The passfile is not generated and are not present in the generated directory. Continuing without adding the certificates.
+2022-09-06T11:00:22.639+00:00, info, , Generating CSAR for SDL_IPv4_VNF_Without_Optional_VNFC
+2022-09-06T11:00:23.283+00:00, info, , SDL version file loaded into memory
+2022-09-06T11:00:27.817+00:00, info, , CSAR and Json files will be generated on /home/gurana/sdlmedia/orchestration/preparation_tools/generated_cbam_inputs/
+2022-09-06T11:00:27.818+00:00, info, , Generating CSAR for SDL_IPv4_VNF_Without_Optional_VNFC is completed
+2022-09-06T11:00:27.818+00:00, info, , Execution of prepare_VNF_inputs.py completed
+
