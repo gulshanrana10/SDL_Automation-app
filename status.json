@@ -1,0 +1,85 @@
+{
+    "status": "SUCCESS",
+    "deployment": [
+        {
+            "sdlInstance": "A",
+            "lsdlInstance": "1",
+            "confdVip": "10.50.73.34",
+            "message": "Instantiation has been completed Successfully [INSTANTIATED_CONFIGURED_ACTIVE]",
+            "transaction": {
+                "status": "SUCCESS",
+                "end-time": "2022-01-11T10:04:15+02:00",
+                "start-time": "2022-01-11T09:56:39+02:00",
+                "jobs": {
+                    "job": [
+                        {
+                            "status": "FAIL",
+                            "end-time": "2022-01-11T10:02:36+02:00",
+                            "start-time": "2022-01-11T09:59:12+02:00",
+                            "description": "TLMSRV,DSCSRV,NTFSRV,DIAGSRV,SYNCSRV publish-ops-endpoints",
+                            "id": "023f3a56-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T10:04:15+02:00",
+                            "start-time": "2022-01-11T10:04:05+02:00",
+                            "description": "copy-sudoers-files",
+                            "id": "023f459e-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T09:59:12+02:00",
+                            "start-time": "2022-01-11T09:57:52+02:00",
+                            "description": "DBSRV-publish-ops-endpoints",
+                            "id": "023f3715-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T09:57:24+02:00",
+                            "start-time": "2022-01-11T09:57:14+02:00",
+                            "description": "vnf-cluster-config",
+                            "id": "023f2fd9-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T10:04:05+02:00",
+                            "start-time": "2022-01-11T10:04:05+02:00",
+                            "description": "republish-topology",
+                            "id": "023f438c-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T09:57:52+02:00",
+                            "start-time": "2022-01-11T09:57:24+02:00",
+                            "description": "check-initial-exp-dependencies",
+                            "id": "023f340d-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T10:02:41+02:00",
+                            "start-time": "2022-01-11T10:02:36+02:00",
+                            "description": "initiate-first-topology-publish",
+                            "id": "023f3d2e-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "FAIL",
+                            "end-time": "2022-01-11T10:04:05+02:00",
+                            "start-time": "2022-01-11T10:02:41+02:00",
+                            "description": "trigger-cas-rtdb-sync",
+                            "id": "023f412e-72b4-11ec-a680-fa163e72e960"
+                        },
+                        {
+                            "status": "SUCCESS",
+                            "end-time": "2022-01-11T09:57:14+02:00",
+                            "start-time": "2022-01-11T09:56:39+02:00",
+                            "description": "ansible-tagged-config-update",
+                            "id": "023f2978-72b4-11ec-a680-fa163e72e960"
+                        }
+                    ]
+                },
+                "type": "vnf-bootstrap",
+                "id": "7dce36f5-b368-450f-a311-f018adc13e0a"
+            }
+        }
+    ]
+}

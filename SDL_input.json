@@ -1,0 +1,68 @@
+{
+    "Flavor": {
+        "OPS": {
+            "name": "gurana_sdl_ops",
+            "vcpu": 4,
+            "disk": 25,
+            "ram": 8192
+        },
+        "AccessDB": {
+            "name": "gurana_sdl_access_rtdb",
+            "vcpu": 8,
+            "disk": 50,
+            "ram": 32768
+        },
+        "StorageDB": {
+            "name": "gurana_sdl_storage_rtdb",
+            "vcpu": 8,
+            "disk": 50,
+            "ram": 32768
+        },
+        "TELE": {
+            "name": "gurana_sdl_tele",
+            "vcpu": 4,
+            "disk": 25,
+            "ram": 16384
+        },
+        "NTF": {
+            "name": "gurana_sdl_ntf",
+            "vcpu": 4,
+            "disk": 50,
+            "ram": 16384
+        },
+        "DIAG": {
+            "name": "gurana_sdl_diag",
+            "vcpu": 4,
+            "disk": 25,
+            "ram": 16384
+        }
+    },
+    "rc": "/home/gurana/CBIS_585-openrc.sh",
+	
+    "media": {
+        "cpio_file_path": "/root/cbis585_folder/SDL_22/SDL-22.0.0.0-20211208-118.cpio"
+    },
+    "glance": {
+        "OPS": "nokia-sdl-operations-22",
+        "RTDB": "nokia-sdl-realtimedatabase-22",
+        "TELE": "nokia-sdl-telemetry-22",
+        "DIAG": "nokia-sdl-diagnostics-22",
+        "NTF": "nokia-sdl-notification-22"
+    },
+    "VNF": {	
+        "lsdl-instance": "1",
+        "TPD": "/home/gurana/TPD.yaml",
+        "sdl-instance": "A",
+        "enc-pass": "Yt_xk39b",
+        "vnf-type": "sdl",
+        "mode": "cbam",
+        "cbam-version": "21",
+        "resource_suffix": "SDL_test",
+        "timeout-vnf_deploy": 5000,
+        "cbam-ip": "10.6.134.27",
+        "cbam-cert": "/home/gurana/ca.cert.pem",
+        "clientId": "sdl",
+        "secret_key": "8ec47091-3f24-41a3-8117-8c4d69c27068",
+        "timeout-sdl_instantiation": 5000
+    }
+}

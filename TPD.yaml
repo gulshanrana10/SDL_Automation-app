@@ -1,0 +1,223 @@
+tpd_version: 22.0.0.0-0001
+global_config_parameters:
+   localities: Singapore
+   document_spaces:
+     - name: docSpaceA
+       single_page: false
+       nf_group_ids: 1
+     - name: nsrdata
+       single_page: true
+       nf_group_ids: 1
+   nf_groups:
+     - nf_group_id: 1
+       vnfs_per_locality: 1
+nf_group_config_parameters:
+   nf_group_id: 1
+region_name: regionOne
+availability-zones:
+             - OVS
+domain_name: sdl.com
+timezone: Asia/Singapore
+sdladmin_passwd: $6$vEdMHlS9ODrnRkBL$ZAeKL5QdffHD2SMYb0eE6TY/2XUs6G3WGyXymvJLBp9chwyG5X5vwdjKTyTZxxhqH8VNYvbpAWQBKX/aSie1e.
+root_passwd: $6$vEdMHlS9ODrnRkBL$ZAeKL5QdffHD2SMYb0eE6TY/2XUs6G3WGyXymvJLBp9chwyG5X5vwdjKTyTZxxhqH8VNYvbpAWQBKX/aSie1e.
+ssh_pre_banner: "/home/gurana/pre_banner.txt"
+ssh_post_banner: "/home/gurana/post_banner.txt"
+ext_oam_dscp: AF21
+ext_app_dscp: AF32
+vnfc-hostname-prefix: sdl
+vnfdId: sdl01
+vnfname: lbsnsdl01
+mtu: 1400
+users-file: "/home/gurana/sdlmedia/orchestration/encryption/vnf_users.json"
+ntp-server-ips:
+    - 10.18.50.129
+    - 10.18.50.130
+ops:
+    image-name: SDL_OPS_22
+    number-of-instances: 3
+    volume-size-gb: 25
+    flavor-name: SDL_OPS
+    ops-internal-timeouts:
+      lcm-vnfInstantiate: 3000
+      ha-cluster-setup: 1800
+    ops_names:
+            - lbsnsdlops01
+            - lbsnsdlops02
+            - lbsnsdlops03
+db:
+    image-name: SDL_RTDB_22
+    number-of-access-instances: 1
+    number-of-storage-instances: 1
+    volume-size-gb-access: 10
+    volume-size-gb-storage: 10
+    access-flavor-name: SDL_ACCESS
+    storage-flavor-name: SDL_STORAGE
+    revenue-assurance-enabled: true
+    access_names:
+            - lbsnsdlacc01
+    storage_names:
+            - lbsnsdlstor01
+tele:
+    image-name: SDL_TELE_22
+    number-of-instances: 3
+    volume-size-gb: 25
+    flavor-name: SDL_TELE
+    tele_names:
+            - lbsnsdltlm01
+            - lbsnsdltlm02
+            - lbsnsdltlm03
+ntf:
+    image-name: SDL_NTF_22
+    number-of-instances: 3
+    volume-size-gb: 15
+    flavor-name: SDL_NOTIF
+    ntf_names:
+            - lbsnsdlntf01
+            - lbsnsdlntf02
+            - lbsnsdlntf03
+diag:
+    image-name: SDL_DIAG_22
+    number-of-instances: 3
+    volume-size-gb: 25
+    flavor-name: SDL_DIAG
+    diag_names:
+            - lbsnsdldiag01
+            - lbsnsdldiag02
+            - lbsnsdldiag03
+application-parameters:
+   locality: Singapore
+   sdl-instance: A
+   primary-sdl-instance: A
+   lsdl-instance: '1'
+   ntf-cluster-config:
+     role{default}: default
+     pull-mode{default}: MIXED_MODE
+     security-protocol{default}:
+       notification-pull-interface{default}: PLAINTEXT  
+networks:
+    ext-oam-network:
+        predefined: true
+        name: CBIS_585_external_network_572
+        ipv4:
+            subnets:
+                - subnet: 10.18.57.96/27
+                  subnet_name: external_network_572_subnet
+                  routes:
+                    - destination: 0.0.0.0/0
+                      gateway: 10.18.57.97
+            method: static
+            diag_vip_ipv4: 10.18.57.121
+            confd_vip_ipv4: 10.18.57.120
+            tele_vip_ipv4: 10.18.57.122
+            ops:
+               - 10.18.57.99
+               - 10.18.57.100
+               - 10.18.57.101
+            db:
+               - 10.18.57.102
+               - 10.18.57.103
+            ntf:
+               - 10.18.57.104
+               - 10.18.57.105
+               - 10.18.57.106
+            tele:
+               - 10.18.57.107
+               - 10.18.57.108
+               - 10.18.57.109
+            diag:
+               - 10.18.57.110
+               - 10.18.57.111
+               - 10.18.57.112
+
+    ext-app-network:
+        predefined: true
+        name: lbsnsdl01_App_Ipv4_Network
+        ipv4:
+            subnets:
+                - subnet: 192.168.57.64/27
+                  subnet_name: external-app-net-static-ipv4
+                  routes:
+                    - destination: 192.167.57.64/27
+                      gateway: 192.168.57.94
+            method: static
+            disco_vip_ipv4: 192.168.57.87
+            ops:
+                - 192.168.57.65
+                - 192.168.57.66
+                - 192.168.57.67
+            db:
+                - 192.168.57.68
+            ntf:
+                - 192.168.57.69
+                - 192.168.57.70
+                - 192.168.57.71
+
+    ext-db-network:
+        predefined: true
+        name: lbsnsdl01_DB_Ext_Ipv4_Network
+        ipv4:
+            subnets:
+                - subnet: 192.168.57.96/28
+                  subnet_name: external-db-net-static-ipv4
+                  routes:
+                    - destination: 192.167.57.96/28
+                      gateway: 192.168.57.97
+            method: static
+            db:
+                - 192.168.57.98
+                - 192.168.57.99
+            ntf:
+                - 192.168.57.100
+                - 192.168.57.101
+                - 192.168.57.102
+
+    int-oam-network:
+        predefined: false
+        name: lbsnsdl01_SDL_Int
+        ipv4:
+            subnets:
+                - subnet: 192.168.57.0/27
+                  routes:
+                    - destination: 192.167.57.0/27
+                      gateway: 192.168.57.1
+            method: static
+            ops_int_vip_ipv4: 192.168.57.16
+            diag_int_vip_ipv4: 192.168.57.17
+            ops:
+                - 192.168.57.2
+                - 192.168.57.3
+                - 192.168.57.4
+            db:
+                - 192.168.57.5
+                - 192.168.57.6
+            ntf:
+                - 192.168.57.7
+                - 192.168.57.8
+                - 192.168.57.9
+            tele:
+                - 192.168.57.10
+                - 192.168.57.11
+                - 192.168.57.12
+            diag:
+                - 192.168.57.13
+                - 192.168.57.14
+                - 192.168.57.15
+
+    int-db-network:
+        predefined: false
+        name: lbsnsdl01_DB_Int
+        ipv4:
+            subnets:
+                - subnet: 192.168.57.48/28
+                  routes:
+                    - destination: 192.167.57.48/28
+                      gateway: 192.168.57.49
+            method: static
+            db:
+                - 192.168.57.50
+                - 192.168.57.51
+            ntf:
+                - 192.168.57.52
+                - 192.168.57.53
+                - 192.168.57.54
+
